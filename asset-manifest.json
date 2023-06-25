@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e12c313.css",
-    "main.js": "/static/js/main.d37211ef.js",
+    "main.css": "/static/css/main.d180c265.css",
+    "main.js": "/static/js/main.bb943e81.js",
     "static/media/postgres.svg": "/static/media/postgres.665a7ea642ea53ee6518509534d89d42.svg",
-    "static/media/php.svg": "/static/media/php.b16a7381acc769778a7a99bbabfa5e53.svg",
     "static/media/react.svg": "/static/media/react.1495a6a0c751ac52af3164f785e64d7b.svg",
     "static/media/discord.svg": "/static/media/discord.20b28421ee7c86df7ec2208093e4253a.svg",
     "static/media/github.svg": "/static/media/github.0391b2c8e585b36d75e030933c26c199.svg",
@@ -17,6 +16,7 @@
     "static/media/js.svg": "/static/media/js.75fa9cdf8b00c1ddc571fbe57667c38f.svg",
     "static/media/express.svg": "/static/media/express.428705f431d5c3774d722fc88b177522.svg",
     "static/media/css.svg": "/static/media/css.ea71c44dec4b77b93a74259892c9d106.svg",
+    "static/media/ethereum.svg": "/static/media/ethereum.a287a01fae23412ff6bd7f053d7b9000.svg",
     "static/media/solidity.svg": "/static/media/solidity.2bd035789524bdc0a68a28510dc9eceb.svg",
     "static/media/tailwindcss.svg": "/static/media/tailwindcss.79614a5f61617ba49a0891494521226b.svg",
     "static/media/c.svg": "/static/media/c.d6e64290cbb6b8e33c4dd955b3d81abe.svg",
@@ -25,12 +25,11 @@
     "static/media/mongodb.svg": "/static/media/mongodb.4a790e2582289412e0a4231ceed7faa4.svg",
     "index.html": "/index.html",
     "static/media/email.svg": "/static/media/email.81994c00fc50bad4923081f4b8183f73.svg",
-    "static/media/ethereum.svg": "/static/media/ethereum.f2d1e4fcbb187e988eff1ce6c6b2533a.svg",
-    "main.7e12c313.css.map": "/static/css/main.7e12c313.css.map",
-    "main.d37211ef.js.map": "/static/js/main.d37211ef.js.map"
+    "main.d180c265.css.map": "/static/css/main.d180c265.css.map",
+    "main.bb943e81.js.map": "/static/js/main.bb943e81.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e12c313.css",
-    "static/js/main.d37211ef.js"
+    "static/css/main.d180c265.css",
+    "static/js/main.bb943e81.js"
   ]
 }
