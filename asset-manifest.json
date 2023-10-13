@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3295c300.css",
-    "main.js": "/static/js/main.c01c8191.js",
+    "main.js": "/static/js/main.95ec178d.js",
     "static/media/postgres.svg": "/static/media/postgres.665a7ea642ea53ee6518509534d89d42.svg",
     "static/media/react.svg": "/static/media/react.1495a6a0c751ac52af3164f785e64d7b.svg",
     "static/media/discord.svg": "/static/media/discord.20b28421ee7c86df7ec2208093e4253a.svg",
@@ -20,18 +20,18 @@
     "static/media/solidity.svg": "/static/media/solidity.2bd035789524bdc0a68a28510dc9eceb.svg",
     "static/media/tailwindcss.svg": "/static/media/tailwindcss.79614a5f61617ba49a0891494521226b.svg",
     "static/media/graphql.svg": "/static/media/graphql.0c4496b189714854400d821fe6edffd1.svg",
+    "index.html": "/index.html",
     "static/media/c.svg": "/static/media/c.d6e64290cbb6b8e33c4dd955b3d81abe.svg",
     "static/media/html.svg": "/static/media/html.06f35cc5e7efdb778d0edf23ff15d60b.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.9db740d0bc66eb040c989b527903c106.svg",
     "static/media/mongodb.svg": "/static/media/mongodb.4a790e2582289412e0a4231ceed7faa4.svg",
-    "index.html": "/index.html",
     "static/media/email.svg": "/static/media/email.81994c00fc50bad4923081f4b8183f73.svg",
     "static/media/haskell.svg": "/static/media/haskell.94bfb9a4bcc7000937e68bb07f4e64a4.svg",
     "main.3295c300.css.map": "/static/css/main.3295c300.css.map",
-    "main.c01c8191.js.map": "/static/js/main.c01c8191.js.map"
+    "main.95ec178d.js.map": "/static/js/main.95ec178d.js.map"
   },
   "entrypoints": [
     "static/css/main.3295c300.css",
-    "static/js/main.c01c8191.js"
+    "static/js/main.95ec178d.js"
   ]
 }
