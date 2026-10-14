@@ -1,0 +1,70 @@
+import Image from 'next/image';
+import styles from './project-page.module.css';
+
+export type Project = {
+	id: string;
+	title: string;
+	description: string;
+	image: string;
+	date: string;
+	technologies: string[];
+	scope?: string[];
+	code?: string;
+	demo?: string;
+	npm?: string;
+	children?: React.ReactNode;
+	extraLinks?: { label: string; url: string }[];
+};
+
+export default function ProjectPage({ project }: { project: Project }) {
+	return (
+		<section className={styles.content}>
+			<header className={styles.projectHeader}>
+				<h1>{project.title}</h1>
+				<p>{project.date}</p>
+			</header>
+			<div className={styles.hero}>
+				<Image src={`/projects/${project.image}`} alt={`${project.title} project screenshot`} fill sizes="(max-width: 800px) 100vw, 768px" />
+			</div>
+			<p className={styles.description}>{project.description}</p>
+			<section className={styles.technologies} aria-labelledby="technologies-title">
+				<h2 id="technologies-title">Technologies</h2>
+				<p className={styles.technologiesList}>{project.technologies.join(', ')}</p>
+			</section>
+			{!!project.scope && (
+				<section className={styles.scope} aria-labelledby="scope-title">
+					<h2 id="scope-title">Scope</h2>
+					<ul className={styles.scopeList}>
+						{project.scope.map((item, index) => (
+							<li key={index}>{item}</li>
+						))}
+					</ul>
+				</section>
+			)}
+			{!!project.children ? project.children : null}
+			<nav className={styles.projectLinks} aria-label="Project links">
+				{project.code && (
+					<a className="underline" href={project.code} target="_blank" rel="noopener noreferrer">
+						Code
+					</a>
+				)}
+				{project.demo && (
+					<a className="underline" href={project.demo} target="_blank" rel="noopener noreferrer">
+						Demo
+					</a>
+				)}
+				{project.npm && (
+					<a className="underline" href={project.npm} target="_blank" rel="noopener noreferrer">
+						NPM
+					</a>
+				)}
+				{project.extraLinks &&
+					project.extraLinks.map(link => (
+						<a className="underline" href={link.url} target="_blank" rel="noopener noreferrer" key={link.url}>
+							{link.label}
+						</a>
+					))}
+			</nav>
+		</section>
+	);
+}

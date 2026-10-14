@@ -1,0 +1,177 @@
+@import '@picocss/pico/css/pico.min.css';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*:not(dialog) {
+	margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		interpolate-size: allow-keywords;
+	}
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+li {
+	list-style-type: disc !important;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+:root[data-theme='light'] {
+	--pico-background-color: #ffffff;
+	--pico-color: #171717;
+	--pico-muted-color: #707070;
+	--pico-muted-border-color: #dedede;
+	--pico-text-selection-color: rgb(0 0 0 / 12%);
+	--pico-form-element-background-color: #ffffff;
+	--pico-form-element-border-color: #bdbdbd;
+	--pico-contrast: #111111;
+	--pico-contrast-background: #111111;
+	--pico-contrast-border: #111111;
+	--pico-link-color: #6f7887;
+	--pico-link-hover-color: #0f1114;
+}
+
+:root[data-theme='dark'] {
+	--pico-background-color: #111111;
+	--pico-color: #f2f2f2;
+	--pico-muted-color: #a0a0a0;
+	--pico-muted-border-color: #3a3a3a;
+	--pico-text-selection-color: rgb(255 255 255 / 20%);
+	--pico-form-element-background-color: #1c1c1c;
+	--pico-form-element-border-color: #555555;
+	--pico-contrast: #ffffff;
+	--pico-contrast-background: #f2f2f2;
+	--pico-contrast-border: #f2f2f2;
+	--pico-link-color: #6f7887;
+	--pico-link-hover-color: #d1d5db;
+}
+
+:root {
+	--font-mono: ui-monospace, monospace;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+}
+
+main {
+	flex: 1;
+}
+
+main,
+header {
+	max-width: 50rem !important;
+}
+
+footer {
+	max-width: 52rem !important;
+}
+
+section {
+	padding-block: 1.5rem;
+}
+
+h1 {
+	font-family: var(--font-display), Georgia, serif;
+	font-weight: 600;
+	font-size: 3rem;
+	line-height: 1.1;
+}
+
+@media (max-width: 600px) {
+	main,
+	header,
+	footer {
+		max-width: 100dvw !important;
+	}
+	h1 {
+		font-size: 2.5rem;
+	}
+}
+
+h2 {
+	font-family: var(--font-heading), sans-serif;
+	font-weight: 600;
+}
+
+a.muted {
+	font-size: 0.875rem;
+	color: var(--pico-link-color);
+	text-decoration: none;
+}
+
+a.muted:hover {
+	color: var(--pico-link-hover-color);
+	text-decoration: none;
+}
+
+a.muted.underline {
+	text-decoration: underline;
+	text-underline-offset: 4px !important;
+	text-decoration-thickness: 1px !important;
+}
+
+a {
+	color: var(--pico-contrast);
+	text-decoration: underline;
+	text-decoration-color: var(--pico-muted-border-color);
+	text-underline-offset: 0.25rem;
+}
+
+a:hover {
+	text-decoration-color: var(--pico-contrast);
+}

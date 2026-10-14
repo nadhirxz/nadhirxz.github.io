@@ -1,0 +1,77 @@
+.page {
+	min-height: 100svh;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	width: 100%;
+	max-width: 64rem;
+	margin-inline: auto;
+}
+
+.title {
+	margin-bottom: 0.2rem;
+}
+
+.description {
+	margin: 0 0 2rem;
+}
+
+.projectCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.25rem;
+}
+
+.project {
+	flex: 0 1 calc((100% - 2.5rem) / 3);
+	min-width: 0;
+}
+
+.projectLink {
+	display: block;
+	color: var(--pico-color);
+	text-decoration: none !important;
+}
+
+.projectLink:focus-visible {
+	outline: 2px solid var(--pico-color);
+	outline-offset: 2px;
+}
+
+.imageFrame {
+	position: relative;
+	aspect-ratio: 9 / 5;
+	overflow: hidden;
+}
+
+.imageFrame img {
+	object-fit: cover;
+	filter: grayscale(0.8);
+	transition: filter 200ms ease;
+	border-radius: 0.25rem;
+	border: 1px solid var(--pico-muted-border-color);
+}
+
+.projectLink:hover .imageFrame img,
+.projectLink:focus-visible .imageFrame img {
+	filter: grayscale(0);
+}
+
+.projectTitle {
+	margin: 0;
+	padding-block: 0.75rem;
+	font-size: 1.15rem;
+}
+
+@media (max-width: 700px) {
+	.content {
+		padding-block: 2.5rem 3rem;
+	}
+
+	.project {
+		flex-basis: 100%;
+	}
+}

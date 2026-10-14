@@ -1,0 +1,103 @@
+.content {
+	width: 100%;
+	margin-inline: auto;
+}
+
+.projectHeader {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.projectHeader h1 {
+	margin: 0;
+}
+
+.projectHeader p {
+	flex: none;
+	color: var(--pico-muted-color);
+}
+
+.hero {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 9 / 5;
+	background: var(--pico-muted-border-color);
+	overflow: hidden;
+}
+
+.hero img {
+	object-fit: cover;
+}
+
+.description {
+	margin-top: 1.5rem;
+	color: var(--pico-muted-color);
+	line-height: 1.75;
+}
+
+.technologies h2 {
+	margin-bottom: 0.75rem;
+	font-size: 1.125rem;
+}
+
+.technologies ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 1.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.technologiesList {
+	margin: 0;
+	color: var(--pico-muted-color);
+	font-size: 0.875rem;
+}
+
+.scope {
+	padding-top: 0;
+}
+
+.scope h2 {
+	margin-bottom: 0.75rem;
+	font-size: 1.125rem;
+}
+
+.scopeList {
+	margin: 0;
+	padding-left: 1.25rem;
+	color: var(--pico-muted-color);
+	font-size: 0.875rem;
+	line-height: 1.75;
+	list-style-type: disc;
+}
+
+.projectLinks {
+	display: flex;
+	justify-content: flex-start;
+	gap: 0.75rem;
+}
+
+.projectLinks > a {
+	color: var(--pico-contrast);
+	text-decoration: underline;
+	text-decoration-color: var(--pico-muted-border-color);
+	text-underline-offset: 0.25rem;
+	width: fit-content;
+}
+
+.projectLinks > a:hover {
+	text-decoration-color: var(--pico-contrast);
+}
+
+@media (max-width: 600px) {
+	.projectHeader {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+}

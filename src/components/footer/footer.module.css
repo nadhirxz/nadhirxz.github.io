@@ -1,0 +1,87 @@
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.5rem 1rem;
+	margin-top: auto;
+	padding-block: 0.5rem 1.5rem;
+	border-top: 1px solid var(--pico-muted-border-color);
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+	.footer {
+		padding: 1rem 0.7rem;
+	}
+}
+
+.footer p {
+	font-size: 0.75rem;
+	color: var(--pico-muted-color);
+	padding: 0 0.5rem;
+}
+
+.footer nav {
+	margin: 0;
+	padding: 0 0.5rem;
+}
+
+.socialLinks {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-right: 0.2rem !important;
+}
+
+.socialLinks li {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.1rem;
+}
+
+.socialLinks a {
+	display: inline-grid;
+	place-items: center;
+	color: inherit;
+	text-decoration: none !important;
+	color: var(--pico-link-color);
+}
+
+.socialLinks a:hover {
+	color: var(--pico-link-hover-color);
+}
+
+.socialIcon {
+	max-width: none;
+	color: inherit;
+	margin: -0.25rem;
+}
+
+@media (max-width: 600px) {
+	.footer {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.footer p {
+		text-align: center;
+		width: 100%;
+	}
+
+	.footer nav {
+		width: 100%;
+	}
+
+	.footer nav ul {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+}
