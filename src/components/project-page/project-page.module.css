@@ -26,6 +26,7 @@
 	aspect-ratio: 9 / 5;
 	background: var(--pico-muted-border-color);
 	overflow: hidden;
+	background-color: transparent;
 }
 
 .hero img {
@@ -36,6 +37,31 @@
 	margin-top: 1.5rem;
 	color: var(--pico-muted-color);
 	line-height: 1.75;
+}
+
+.services h3 {
+	font-family: var(--font-heading), sans-serif;
+	font-weight: 500;
+	font-size: 0.9rem;
+	margin-bottom: 0.25rem;
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.services h2 {
+	margin-bottom: 0.25rem;
+	font-size: 1.125rem;
+}
+
+.services > div > p {
+	margin: 0;
+	color: var(--pico-muted-color);
+	line-height: 1.5;
+	font-size: 0.875rem;
 }
 
 .technologies h2 {

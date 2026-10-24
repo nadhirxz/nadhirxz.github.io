@@ -8,6 +8,7 @@ export type Project = {
 	image: string;
 	date: string;
 	technologies: string[];
+	services?: { label: string; desc: string }[];
 	scope?: string[];
 	code?: string;
 	demo?: string;
@@ -24,9 +25,26 @@ export default function ProjectPage({ project }: { project: Project }) {
 				<p>{project.date}</p>
 			</header>
 			<div className={styles.hero}>
-				<Image src={`/projects/${project.image}`} alt={`${project.title} project screenshot`} fill sizes="(max-width: 800px) 100vw, 768px" />
+				<Image
+					src={`/projects/${project.image}`}
+					alt={`${project.title} project screenshot`}
+					style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }}
+					fill
+					sizes="(max-width: 800px) 100vw, 768px"
+				/>
 			</div>
 			<p className={styles.description}>{project.description}</p>
+			{!!project.services && (
+				<section className={styles.services} aria-labelledby="services-title">
+					<h2 id="services-title">Services</h2>
+					{project.services.map((service, index) => (
+						<div key={index}>
+							<h3>{service.label}</h3>
+							<p>{service.desc}</p>
+						</div>
+					))}
+				</section>
+			)}
 			<section className={styles.technologies} aria-labelledby="technologies-title">
 				<h2 id="technologies-title">Technologies</h2>
 				<p className={styles.technologiesList}>{project.technologies.join(', ')}</p>
