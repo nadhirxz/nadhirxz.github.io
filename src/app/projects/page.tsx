@@ -9,6 +9,7 @@ const projects = [
 	{ id: 'meta-z', title: 'Meta-Z', image: 'meta-z.png' },
 	{ id: 'trk', title: 'TRK', image: 'trk.png' },
 	{ id: 'priefcase', title: 'Priefcase', image: 'priefcase.png' },
+	{ id: 'data-z', title: 'DataZ', image: 'data-z.png' },
 	{ id: 'sahla', title: 'Sahla', image: 'sahla.png' },
 	{ id: 'inventory-management-app', title: 'Inventory Management App', image: 'inventory-manager.png' },
 	{ id: 'safe', title: 'safe', image: 'safe.png' },
