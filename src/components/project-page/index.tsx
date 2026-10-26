@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import TrackedExternalLink from '@/components/tracked-external-link';
 import styles from './project-page.module.css';
 
 export type Project = {
@@ -62,25 +63,54 @@ export default function ProjectPage({ project }: { project: Project }) {
 			{!!project.children ? project.children : null}
 			<nav className={styles.projectLinks} aria-label="Project links">
 				{project.code && (
-					<a className="underline" href={project.code} target="_blank" rel="noopener noreferrer">
+					<TrackedExternalLink
+						className="underline"
+						href={project.code}
+						target="_blank"
+						rel="noopener noreferrer"
+						event="project_link_opened"
+						properties={{ project_id: project.id, link_type: 'code' }}
+					>
 						Code
-					</a>
+					</TrackedExternalLink>
 				)}
 				{project.demo && (
-					<a className="underline" href={project.demo} target="_blank" rel="noopener noreferrer">
+					<TrackedExternalLink
+						className="underline"
+						href={project.demo}
+						target="_blank"
+						rel="noopener noreferrer"
+						event="project_link_opened"
+						properties={{ project_id: project.id, link_type: 'demo' }}
+					>
 						Demo
-					</a>
+					</TrackedExternalLink>
 				)}
 				{project.npm && (
-					<a className="underline" href={project.npm} target="_blank" rel="noopener noreferrer">
+					<TrackedExternalLink
+						className="underline"
+						href={project.npm}
+						target="_blank"
+						rel="noopener noreferrer"
+						event="project_link_opened"
+						properties={{ project_id: project.id, link_type: 'npm' }}
+					>
 						NPM
-					</a>
+					</TrackedExternalLink>
 				)}
 				{project.extraLinks &&
 					project.extraLinks.map(link => (
-						<a className="underline" href={link.url} target="_blank" rel="noopener noreferrer" key={link.url}>
+						<TrackedExternalLink
+							className="underline"
+							href={link.url}
+							target="_blank"
+							rel="noopener noreferrer"
+							key={link.url}
+							event="project_link_opened"
+							properties={{ project_id: project.id, link_type: 'extra', link_label: link.label }}
+						>
 							{link.label}
-						</a>
+						</TrackedExternalLink>
 					))}
 			</nav>
 		</section>
