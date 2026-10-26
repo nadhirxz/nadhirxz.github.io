@@ -17,14 +17,14 @@
 
 .projectHeader p {
 	flex: none;
-	color: var(--pico-muted-color);
+	color: var(--color-muted);
 }
 
 .hero {
 	position: relative;
 	width: 100%;
 	aspect-ratio: 9 / 5;
-	background: var(--pico-muted-border-color);
+	background: var(--color-border);
 	overflow: hidden;
 	background-color: transparent;
 }
@@ -35,7 +35,7 @@
 
 .description {
 	margin-top: 1.5rem;
-	color: var(--pico-muted-color);
+	color: var(--color-muted);
 	line-height: 1.75;
 }
 
@@ -59,7 +59,7 @@
 
 .services > div > p {
 	margin: 0;
-	color: var(--pico-muted-color);
+	color: var(--color-muted);
 	line-height: 1.5;
 	font-size: 0.875rem;
 }
@@ -80,7 +80,7 @@
 
 .technologiesList {
 	margin: 0;
-	color: var(--pico-muted-color);
+	color: var(--color-muted);
 	font-size: 0.875rem;
 }
 
@@ -96,7 +96,7 @@
 .scopeList {
 	margin: 0;
 	padding-left: 1.25rem;
-	color: var(--pico-muted-color);
+	color: var(--color-muted);
 	font-size: 0.875rem;
 	line-height: 1.75;
 	list-style-type: disc;
@@ -109,15 +109,15 @@
 }
 
 .projectLinks > a {
-	color: var(--pico-contrast);
+	color: var(--color-contrast);
 	text-decoration: underline;
-	text-decoration-color: var(--pico-muted-border-color);
+	text-decoration-color: var(--color-border);
 	text-underline-offset: 0.25rem;
 	width: fit-content;
 }
 
 .projectLinks > a:hover {
-	text-decoration-color: var(--pico-contrast);
+	text-decoration-color: var(--color-contrast);
 }
 
 @media (max-width: 600px) {

@@ -22,9 +22,9 @@ const Extra = (): React.ReactNode => (
 				gap: '1.25rem',
 			}}
 		>
-			<Image src={Img1} alt="DataZ screenshot 1" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img2} alt="DataZ screenshot 2" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img3} alt="DataZ screenshot 3" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
+			<Image src={Img1} alt="DataZ screenshot 1" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img2} alt="DataZ screenshot 2" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img3} alt="DataZ screenshot 3" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
 		</div>
 		<div
 			style={{
@@ -38,16 +38,16 @@ const Extra = (): React.ReactNode => (
 			<Image
 				src={Img41}
 				alt="DataZ screenshot 4-1"
-				style={{ borderTopRightRadius: '5px', borderTopLeftRadius: '5px', border: '1px solid var(--pico-muted-border-color)', borderBlockEnd: 'none' }}
+				style={{ borderTopRightRadius: '5px', borderTopLeftRadius: '5px', border: '1px solid var(--color-border)', borderBlockEnd: 'none' }}
 			/>
-			<Image src={Img42} alt="DataZ screenshot 4-2" style={{ border: '1px solid var(--pico-muted-border-color)', borderBlockStart: 'none', borderBlockEnd: 'none' }} />
-			<Image src={Img43} alt="DataZ screenshot 4-3" style={{ border: '1px solid var(--pico-muted-border-color)', borderBlockStart: 'none', borderBlockEnd: 'none' }} />
-			<Image src={Img44} alt="DataZ screenshot 4-4" style={{ border: '1px solid var(--pico-muted-border-color)', borderBlockStart: 'none', borderBlockEnd: 'none' }} />
-			<Image src={Img45} alt="DataZ screenshot 4-5" style={{ border: '1px solid var(--pico-muted-border-color)', borderBlockStart: 'none', borderBlockEnd: 'none' }} />
+			<Image src={Img42} alt="DataZ screenshot 4-2" style={{ border: '1px solid var(--color-border)', borderBlockStart: 'none', borderBlockEnd: 'none' }} />
+			<Image src={Img43} alt="DataZ screenshot 4-3" style={{ border: '1px solid var(--color-border)', borderBlockStart: 'none', borderBlockEnd: 'none' }} />
+			<Image src={Img44} alt="DataZ screenshot 4-4" style={{ border: '1px solid var(--color-border)', borderBlockStart: 'none', borderBlockEnd: 'none' }} />
+			<Image src={Img45} alt="DataZ screenshot 4-5" style={{ border: '1px solid var(--color-border)', borderBlockStart: 'none', borderBlockEnd: 'none' }} />
 			<Image
 				src={Img46}
 				alt="DataZ screenshot 4-6"
-				style={{ borderBottomRightRadius: '5px', borderBottomLeftRadius: '5px', border: '1px solid var(--pico-muted-border-color)', borderBlockStart: 'none' }}
+				style={{ borderBottomRightRadius: '5px', borderBottomLeftRadius: '5px', border: '1px solid var(--color-border)', borderBlockStart: 'none' }}
 			/>
 		</div>
 	</section>

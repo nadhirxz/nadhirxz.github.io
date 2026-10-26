@@ -23,16 +23,16 @@ const Extra = (): React.ReactNode => (
 				gap: '1.25rem',
 			}}
 		>
-			<Image src={Img1} alt="Priefcase screenshot 1" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img2} alt="Priefcase screenshot 2" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img3} alt="Priefcase screenshot 3" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img4} alt="Priefcase screenshot 4" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img5} alt="Priefcase screenshot 5" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img6} alt="Priefcase screenshot 6" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img7} alt="Priefcase screenshot 7" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img8} alt="Priefcase screenshot 8" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img9} alt="Priefcase screenshot 9" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
-			<Image src={Img10} alt="Priefcase screenshot 10" style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }} />
+			<Image src={Img1} alt="Priefcase screenshot 1" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img2} alt="Priefcase screenshot 2" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img3} alt="Priefcase screenshot 3" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img4} alt="Priefcase screenshot 4" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img5} alt="Priefcase screenshot 5" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img6} alt="Priefcase screenshot 6" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img7} alt="Priefcase screenshot 7" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img8} alt="Priefcase screenshot 8" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img9} alt="Priefcase screenshot 9" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
+			<Image src={Img10} alt="Priefcase screenshot 10" style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }} />
 		</div>
 	</section>
 );

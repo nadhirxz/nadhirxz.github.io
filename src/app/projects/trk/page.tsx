@@ -19,7 +19,7 @@ const Extra = (): React.ReactNode => (
 				title="TRK Project Demo"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowFullScreen
-				style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }}
+				style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }}
 			></iframe>
 			<iframe
 				width="100%"
@@ -28,7 +28,7 @@ const Extra = (): React.ReactNode => (
 				title="TRK Project Demo 2"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowFullScreen
-				style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }}
+				style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }}
 			></iframe>
 		</div>
 	</section>

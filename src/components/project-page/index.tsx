@@ -29,7 +29,7 @@ export default function ProjectPage({ project }: { project: Project }) {
 				<Image
 					src={`/projects/${project.image}`}
 					alt={`${project.title} project screenshot`}
-					style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }}
+					style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }}
 					fill
 					sizes="(max-width: 800px) 100vw, 768px"
 				/>

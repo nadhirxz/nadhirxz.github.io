@@ -18,7 +18,7 @@ const headingFont = Manrope({
 
 export const metadata: Metadata = {
 	title: 'Nadhir Ferdji | Software Engineer',
-	description: 'Software engineer focused on full-stack JavaScript and TypeScript, developer experience, scalable systems, and DevOps infrastructure.',
+	description: 'Full-stack Software Engineer building scalable, real-time systems with TypeScript.',
 };
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 			<body>
 				<ThemeProvider>
 					<Header />
-					<main className="container">{children}</main>
+					<main>{children}</main>
 					<Footer />
 				</ThemeProvider>
 			</body>

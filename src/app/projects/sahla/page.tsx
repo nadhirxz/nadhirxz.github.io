@@ -20,7 +20,7 @@ import System from '@/../public/projects/sahla/system.svg';
 const Extra = (): React.ReactNode => (
 	<>
 		<section>
-			<Image src={System} alt="Sahla system architecture" style={{ width: '100%', height: 'auto', padding: '25px', borderRadius: '5px', backgroundColor: '#121212', border: '1px solid var(--pico-muted-border-color)' }} />
+			<Image src={System} alt="Sahla system architecture" style={{ width: '100%', height: 'auto', padding: '25px', borderRadius: '5px', backgroundColor: '#121212', border: '1px solid var(--color-border)' }} />
 		</section>
 		<section>
 			<iframe
@@ -30,7 +30,7 @@ const Extra = (): React.ReactNode => (
 				title="TRK Project Demo"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowFullScreen
-				style={{ borderRadius: '5px', border: '1px solid var(--pico-muted-border-color)' }}
+				style={{ borderRadius: '5px', border: '1px solid var(--color-border)' }}
 			></iframe>
 		</section>
 		<section>
